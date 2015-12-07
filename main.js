@@ -171,7 +171,8 @@ class Player extends Character {
         do {
 
             do {
-                var command = window.prompt("Do you wish to attack, usepot, or flee ?", "attack");
+                //var command = window.prompt("Do you wish to attack, usepot, or flee ?", "attack");
+                var command = "attack";
             } while (command !== "attack" && command !== "usepot" && command !== "flee");
 
             if (command === "attack") {
@@ -229,7 +230,8 @@ var james = new Player("James",100,1,0,10,2,0,0,3);
 
 do{
     do {
-        var move = window.prompt("Do you wish to moveUp, moveDown, moveLeft or moveRight ?", "moveUp");
+        //var move = window.prompt("Do you wish to moveUp, moveDown, moveLeft or moveRight ?", "moveUp");
+        var move = "moveUp";
     } while (move !== "moveUp" && move !== "moveDown" && move !== "moveRight" && move !== "moveLeft");
 
     switch(move){
@@ -250,4 +252,3 @@ do{
 }while(this.hp()>0);
 
 document.write("GAME OVER !");
-
