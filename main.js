@@ -19,15 +19,15 @@ class Character {
 
 
     set hp(value) {
-        _hp = value;
+        this._hp = value;
     }
 
     set name(value) {
-        _name = value;
+        this._name = value;
     }
 
     set level(value) {
-        _level = value;
+        this._level = value;
     }
 
     set xp(value) {
@@ -37,40 +37,40 @@ class Character {
             document.write("You leveled up to " + this.level() + "!");
             this.xp(0);
         }
-        _xp = value;
+        this._xp = value;
 
     }
 
     set attack(value) {
-        _attack = value;
+        this._attack = value;
     }
 
     set resistance(value) {
-        _resistance = value;
+        this._resistance = value;
     }
 
     get name() {
-        return _name;
+        return this._name;
     }
 
     get hp() {
-        return _hp;
+        return this._hp;
     }
 
     get level() {
-        return _level;
+        return this._level;
     }
 
     get xp() {
-        return _xp;
+        return this._xp;
     }
 
     get attack() {
-        return _attack;
+        return this._attack;
     }
 
     get resistance() {
-        return _resistance;
+        return this._resistance;
     }
 
     attack(character){
@@ -99,11 +99,11 @@ class Player extends Character {
 
 
     get nbPots() {
-        return _nbPots;
+        return this._nbPots;
     }
 
     set nbPots(value) {
-        _nbPots = value;
+        this._nbPots = value;
     }
 
     get x() {
@@ -111,19 +111,19 @@ class Player extends Character {
     }
 
     set x(value) {
-        _x = value;
+        this._x = value;
     }
 
     get y() {
-        return _y;
+        return this._y;
     }
 
     set y(value) {
-        _y = value;
+        this._y = value;
     }
 
     moveUp(){
-        this.y(this._y + 1);
+        this._y++;
         document.write(this + "is at" + this.x() + this.y());
         if (Math.random() > 0.9){
             var rat = new Mob("Rat", 50, 1, 0, 5, 3);
@@ -203,7 +203,7 @@ class Player extends Character {
             }
             else if (command === "usepot") {
                 this.hp(this.hp + 30);
-                nbPots(nbPots--);
+                nbPots(nbPots() - 1);
                 monster.attack(this);
             }
 
@@ -236,19 +236,19 @@ do{
 
     switch(move){
         case "moveUp":
-                this.moveUp();
+                james.moveUp();
             break;
         case "moveDown":
-                this.moveDown();
+                james.moveDown();
             break;
         case "moveLeft":
-                this.moveLeft();
+                james.moveLeft();
             break;
         case "moveRight":
-                this.moveRight();
+                james.moveRight();
             break;
     }
 
-}while(this.hp()>0);
+}while(this._hp>0);
 
 document.write("GAME OVER !");
