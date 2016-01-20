@@ -1,8 +1,118 @@
-document.bgColor = "RED";
-var x = document.getElementById("LI");
-console.log(x);
-x.value	= "200";
+var main = function(){
+	document.bgColor = "87ceeb"	;
 
-var y = document.getElementById("results");
-y.innerHTML = 'Hello world';
+	var questions = [{question:"What is the number of planets in the solar system (excluding Pluto)", choices:[7,8,9,10],answer:8}
+				,{question:"In international basketball and in Olympic games, the free-throw or 3-second lane in basketball has what geometrical shape?", choices:["Circle","Rectangle", "Square", "Trapezoid"], answer:"Trapezoid"}
+				,{question:"Which company invented the floppy disk", choices:["IBM in 1971","Apple in 1978", "Microsoft in 1983", "Intel in 1975"], answer:"IBM in 1971"}
+				,{question:"What is the computer symbol used to represent multiplication ?", choices:["|","x","^","*"], answer:"*"}
+				];
+	var i = 0;
+	var max = questions.length;
+	var q = document.getElementById("QUESTION");
+	var a = document.getElementById("a");
+	var b = document.getElementById("b");
+	var c = document.getElementById("c");
+	var d = document.getElementById("d");
+	var buttona = $('#buttona');
+	var buttonb = $('#buttonb');
+	var buttonc = $('#buttonc');
+	var buttond = $('#buttond');
+	var points = 0;
 
+	q.innerHTML = questions[0].question;
+	a.innerHTML = questions[0].choices[0];
+	b.innerHTML = questions[0].choices[1];
+	c.innerHTML = questions[0].choices[2];
+	d.innerHTML = questions[0].choices[3];
+
+	$('#a').click(function(){
+		buttona.prop("checked", true);
+	})
+	$('#b').click(function(){
+		buttonb.prop("checked", true);
+	})
+	$('#c').click(function(){
+		buttonc.prop("checked", true);
+	})
+	$('#d').click(function(){
+		buttond.prop("checked", true);
+	})
+	$('#button').click(function(){
+		$('#feedback').remove();
+		if(buttona.prop("checked") && a.innerHTML == questions[i].answer)
+		{
+			points++; 
+			i++;
+			nextQuestion();
+		}
+		else if(buttonb.prop("checked") && b.innerHTML == questions[i].answer)
+		{
+			points++;
+			i++;
+			nextQuestion();
+		}
+		else if(buttonc.prop("checked") && c.innerHTML == questions[i].answer)
+		{
+			points++;
+			i++;
+			nextQuestion();
+		}
+		else if(buttond.prop("checked") && d.innerHTML == questions[i].answer)
+		{
+			points++;
+			i++;
+			nextQuestion();
+		}
+		else if(!buttona.prop("checked") && !buttonb.prop("checked") && !buttonc.prop("checked") && !buttond.prop("checked"))
+		{
+			$('#error').append('<div class="red" id="feedback">Please check at least one answer !</div>');
+		}
+		else{
+			i++;
+			nextQuestion();	
+		}	
+		console.log("Current points : " + points);
+	});
+
+	var nextQuestion = function(){
+		if(i < max)
+		{
+			$('#quiz').fadeOut('normal', function(){
+					q.innerHTML = questions[i].question;
+					a.innerHTML = questions[i].choices[0];
+					b.innerHTML = questions[i].choices[1];
+					c.innerHTML = questions[i].choices[2];
+					d.innerHTML = questions[i].choices[3];
+					$('#quiz').fadeIn(600);}
+							);
+			buttona.prop("checked", false);
+			buttonb.prop("checked", false);
+			buttonc.prop("checked", false);
+			buttond.prop("checked", false);
+			
+		}
+		else
+		{
+			endQuiz();
+			i=0;
+		}
+	}
+
+	var endQuiz = function(){
+			$('#quiz').fadeOut(100, function(){
+					var textToAppend = "You have answered " + points + " questions out of " + max + " correctly.<br><br>";
+					$('#page').append('<div id="result">' + textToAppend + '</div>');
+					$('#page').append('<button type="button" id="tryagain">Try Again ?</button>');
+			});
+	}
+
+	$("#page").on("click", "#tryagain", function(){
+			$('#result').remove();
+			$('#tryagain').remove();
+			i=0;
+			points = 0;
+			nextQuestion();
+	});
+};
+
+$(document).ready(main);

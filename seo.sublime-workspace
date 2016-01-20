@@ -126,14 +126,6 @@
 				"buffer_size": 7356,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "/home/james/Bureau/gitproxy.sh",
-			"settings":
-			{
-				"buffer_size": 74,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "",
@@ -184,6 +176,8 @@
 	},
 	"file_history":
 	[
+		"/home/james/Bureau/gitproxy.sh",
+		"/home/james/Bureau/unsetgitproxy.sh",
 		"/home/james/SEO/www/apple-touch-icon-144x144.png",
 		"/home/james/SEO/www/comparaison-google-bing-nofollow.html",
 		"/var/www/html/ebm/js-playground/test.html",
@@ -309,9 +303,7 @@
 		"/usr/bin/nodejs",
 		"/usr/bin/node",
 		"/home/james/node-v5.0.0-linux-arm64/bin/npm",
-		"/home/james/EBM/Java/Service/src/service/Service.java",
-		"/home/james/EBM/Java/Service/src/service/Acteur.java",
-		"/home/james/EBM/Java/Service/src/service/Reponse.java"
+		"/home/james/EBM/Java/Service/src/service/Service.java"
 	],
 	"find":
 	{
@@ -377,7 +369,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -403,7 +395,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1654.0,
+						"translation.y": 719.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -455,32 +447,6 @@
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/james/Bureau/gitproxy.sh",
-					"settings":
-					{
-						"buffer_size": 74,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								74,
-								74
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

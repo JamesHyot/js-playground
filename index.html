@@ -2,22 +2,28 @@
 <meta charset="UTF-8">
 <head>
 	<title>
-		Page de base !
+		Quiz
 	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div>
-		<ol>
-			<li id="LI">Salut</li>
-			<li>Comment ça va ?</li>
-			<li>Check this out bro</li>
-			<li>I'm amazing</li>
-			<li>Test JavaScript</li>
-		</ol>
+	<h1>Welcome to my personnal Trivia Quiz !</h1>
+	<div id="page">	
+	<form id="quiz">
+		<div id="QUESTION">
+		</div>
+			<br>
+		<div id="answers">
+			<input type="radio" name="answer" id="buttona" value="A"><span id="a">Réponse A</span><br>
+			<input type="radio" name="answer" id="buttonb" value="B"><span id="b">Réponse B</span><br>
+			<input type="radio" name="answer" id="buttonc" value="C"><span id="c">Réponse C</span><br>
+			<input type="radio" name="answer" id="buttond" value="D"><span id="d">Réponse D</span><br>
+			<button type="button" id="button">Next ></button><br>
+			<div id="error"></div>
+		</div>
+	</form>
 	</div>
-	<p id=results>Coucou :</p>
-	<script type="text/javascript" src="main.js">
-			document.write("Coucou");
-	</script>
+	<script type="text/javascript" src="jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
