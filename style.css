@@ -13,14 +13,45 @@ li{
 }
 
 .red{
-	color:'FF0000';
+	color: red;
 }
 
 #answers{
-	margin-left:30px;
+	margin-left:75px;
 }
 
 input{
 	margin-right: 10px;
 	margin-bottom: 15px;
+}
+
+.btn-style{
+	border : solid 0px #e6e6e6;
+	border-radius : 3px;
+	moz-border-radius : 3px;
+	-webkit-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	font-size : 20px;
+	color : #ffffff;
+	padding : 1px 17px;
+	background-color : #215ba3;
+	margin-right :100px;
+	margin-left :-20px; 
+
+}
+
+.btn-disabled{
+	border : solid 0px #e6e6e6;
+	border-radius : 3px;
+	moz-border-radius : 3px;
+	-webkit-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	font-size : 20px;
+	color : #ffffff;
+	padding : 1px 17px;
+	background-color : #d4e4f7;
+	margin-right :100px;
+	margin-left :-20px; 
 }
