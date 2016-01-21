@@ -1,0 +1,25 @@
+[		
+		{
+			"question":"What is the number of planets in the solar system (excluding Pluto)",
+		 	"choices":[7,8,9,10],
+		 	"answer":8
+		 },
+
+		{
+			"question":"In international basketball and in Olympic games, the free-throw or 3-second lane in basketball has what geometrical shape?",
+		 	"choices":["Circle","Rectangle", "Square", "Trapezoid"],
+		 	"answer":"Trapezoid"
+		},
+
+		{
+			"question":"Which company invented the floppy disk ?",
+			"choices":["IBM in 1971","Apple in 1978", "Microsoft in 1983", "Intel in 1975"],
+			"answer":"IBM in 1971"
+		},
+
+		{
+			"question":"What is the computer symbol used to represent multiplication ?",
+			"choices":["|","x","^","*"],
+			"answer":"*"
+		}
+]

@@ -1,11 +1,8 @@
-var main = function(){
-	document.bgColor = "87ceeb"	;
+var questions;
 
-	var questions = [{question:"What is the number of planets in the solar system (excluding Pluto)", choices:[7,8,9,10],answer:8}
-				,{question:"In international basketball and in Olympic games, the free-throw or 3-second lane in basketball has what geometrical shape?", choices:["Circle","Rectangle", "Square", "Trapezoid"], answer:"Trapezoid"}
-				,{question:"Which company invented the floppy disk ?", choices:["IBM in 1971","Apple in 1978", "Microsoft in 1983", "Intel in 1975"], answer:"IBM in 1971"}
-				,{question:"What is the computer symbol used to represent multiplication ?", choices:["|","x","^","*"], answer:"*"}
-				];
+var main = function(){
+	document.bgColor = "87ceeb";
+
 	var answers = [];
 	var i = 0;
 	var max = questions.length;
@@ -150,7 +147,7 @@ var main = function(){
 				}
 					var textToAppend = "You have answered " + points + " questions out of " + max + " correctly.<br><br>";
 					$('#page').append('<div id="result">' + textToAppend + '</div>');
-					$('#page').append('<button type="button" id="tryagain" class="btn-style">Try Again ?</button>');
+					$('#page').append('<button type="button" id="tryagain" class="btn-back">Try Again ?</button>');
 			});
 	}
 
@@ -164,4 +161,11 @@ var main = function(){
 	});
 };
 
-$(document).ready(main);
+function parseQuestions(callback){
+	$.getJSON("questions.json", function(json) {
+    	questions = json;
+    	callback();
+	});
+}
+
+$(document).ready(parseQuestions(main));
