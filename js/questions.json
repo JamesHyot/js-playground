@@ -1,6 +1,6 @@
 [		
 		{
-			"question":"What is the number of planets in the solar system (excluding Pluto)",
+			"question":"What is the number of planets in the solar system (excluding Pluto and planet X)",
 		 	"choices":[7,8,9,10],
 		 	"answer":8
 		 },

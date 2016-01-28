@@ -1,7 +1,6 @@
 var questions;
 
 var main = function(){
-	document.bgColor = "87ceeb";
 
 	var answers = [];
 	var i = 0;
@@ -88,10 +87,10 @@ var main = function(){
 					$('#quiz').fadeIn(600);
 					if(i>0)
 					{
-					$('#back-btn').removeClass('btn-disabled').addClass('btn-style');
+					$('#back-btn').removeClass('btn-disabled').addClass('btn-primary');
 					}
 					else{
-						$('#back-btn').addClass('btn-disabled').removeClass('btn-style');
+						$('#back-btn').addClass('btn-disabled').removeClass('btn-primary');
 					}
 							
 
@@ -162,7 +161,7 @@ var main = function(){
 };
 
 function parseQuestions(callback){
-	$.getJSON("questions.json", function(json) {
+	$.getJSON("js/questions.json", function(json) {
     	questions = json;
     	callback();
 	});

@@ -1,0 +1,22 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+
+.red{
+	color: red;
+}
+
+#answers{
+	margin-left:75px;
+}
+
+.reponse{
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+
+#back-btn{
+	margin-right: 50px;
+}

@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"margin",
-				"margin-left"
+				"marg",
+				"margin-right"
 			],
 			[
-				"marg",
-				"margin-bottom"
+				"margin",
+				"margin-left"
 			],
 			[
 				"get",
@@ -111,31 +111,31 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1065,
+				"buffer_size": 2524,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "questions.json",
+			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 718,
+				"buffer_size": 3748,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "main.js",
+			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 4292,
+				"buffer_size": 199,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "style.css",
+			"file": "js/questions.json",
 			"settings":
 			{
-				"buffer_size": 975,
+				"buffer_size": 706,
 				"line_ending": "Unix"
 			}
 		}
@@ -188,13 +188,15 @@
 	},
 	"file_history":
 	[
+		"/var/www/html/ebm/js-playground/jumbotron/index.html",
+		"/var/www/html/ebm/js-playground/style.css",
+		"/var/www/html/ebm/js-playground/main.js",
+		"/var/www/html/ebm/js-playground/questions.json",
 		"/var/www/html/ebm/js-playground/jquery-1.12.0.js",
 		"/var/www/html/ebm/js-playground/jquery-1.12.0.jq",
 		"/var/www/html/ebm/js-playground/test.html",
 		"/var/www/html/ebm/js-playground/rpg.js",
 		"/etc/environment",
-		"/var/www/html/ebm/js-playground/main.js",
-		"/var/www/html/ebm/js-playground/style.css",
 		"/var/www/html/ebm/js-playground/README.md",
 		"/var/www/html/ebm/js-playground/index.html",
 		"/home/james/SEO/www/about.html",
@@ -313,9 +315,7 @@
 		"/home/james/distributions-master/deb/README.md",
 		"/usr/bin/nodejs",
 		"/usr/bin/node",
-		"/home/james/node-v5.0.0-linux-arm64/bin/npm",
-		"/home/james/EBM/Java/Service/src/service/Service.java",
-		"/home/james/EBM/Java/Service/src/service/Acteur.java"
+		"/home/james/node-v5.0.0-linux-arm64/bin/npm"
 	],
 	"find":
 	{
@@ -333,6 +333,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"input",
+			"btn",
 			"button",
 			"while",
 			"()",
@@ -385,7 +387,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -393,73 +395,75 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1065,
+						"buffer_size": 2524,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								977,
-								977
+								1977,
+								1977
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 510.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "questions.json",
+					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 718,
+						"buffer_size": 3748,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								718,
-								718
+								2221,
+								2221
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1224.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "main.js",
+					"file": "css/style.css",
 					"settings":
 					{
-						"buffer_size": 4292,
+						"buffer_size": 199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1086,
-								1086
+								119,
+								119
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -470,26 +474,27 @@
 				},
 				{
 					"buffer": 3,
-					"file": "style.css",
+					"file": "js/questions.json",
 					"settings":
 					{
-						"buffer_size": 975,
+						"buffer_size": 706,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								975,
-								975
+								568,
+								568
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 102.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
